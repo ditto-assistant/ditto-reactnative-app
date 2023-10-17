@@ -1,6 +1,8 @@
 # ditto-reactnative-app
 React Native client for ditto assistant. Works by connecting to [nlp_server](http://github.com/omarzanji/nlp_server).
 
+<img src="Screenshot.png" width="40%">
+
 ## First time setup:
 1. Navigate: `cd ditto/`
 2. run `npm install`
