@@ -14,7 +14,7 @@ React Native client for ditto assistant. Works by connecting to [nlp_server](htt
 ## Building APK (Android)
 1. Run the React Native build command for Android:
     `react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res`
-2. Navigate into `android/`
+2. Navigate: `cd android/`
 3. Run: `gradlew assembleDebug`
 4. Build location: `ditto/android/app/build/outputs/apk/debug/app-debug.apk`
 
