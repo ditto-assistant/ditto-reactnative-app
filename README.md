@@ -2,14 +2,14 @@
 React Native client for ditto assistant. Works by connecting to [nlp_server](http://github.com/omarzanji/nlp_server).
 
 ## First time setup:
-1. cd into `ditto/`
+1. Navigate: `cd ditto/`
 2. run `npm install`
 3. rename `ditto/modules/example_config.js` to `ditto/modules/config.js` and fill out [nlp_server's](http://github.com/omarzanji/nlp_server) ip, port and username.
 
 
 ## Run in emulator:
-1. cd into `ditto/`
-3. run `npx react-native run-android` after starting [Android Studio Emulator](https://developer.android.com/studio) or plugging in Androud device with USB Debugging mode on.
+1. Navigate: `cd ditto/`
+2. run `npx react-native run-android` after starting [Android Studio Emulator](https://developer.android.com/studio) or plugging in Androud device with USB Debugging mode on.
 
 ## Building APK (Android)
 1. Run the React Native build command for Android:
