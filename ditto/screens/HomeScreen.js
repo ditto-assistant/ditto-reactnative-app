@@ -214,7 +214,7 @@ const HomeScreen = ({ navigation }) => {
             clearInterval(syncInterval) // fixes memory leak 
         }
 
-    }, [reset, bootStatus, microphoneStatus, IP])
+    }, [reset, bootStatus, microphoneStatus, IP, histCount])
 
     const statusColor = bootStatus === 'on' ? 'green' : 'red'
 
