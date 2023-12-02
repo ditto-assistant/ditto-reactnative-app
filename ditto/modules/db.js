@@ -142,6 +142,17 @@ export const toggleMic = async (ip) => {
   }
 }
 
+/**
+ * Change ditto unit ip (talk to another Ditto unit).
+ */
+export const updateDittoUnitIP = async (newDittoUnitIP, ip) => {
+  try {
+    await sendRequest('POST', 'update_ditto_unit_ip', { "ditto_unit_ip": `${newDittoUnitIP}` }, 1000, ip)
+  } catch (e) {
+    console.error(e)
+  }
+}
+
 
 /**
  * Send a prompt to Ditto.

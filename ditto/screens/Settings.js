@@ -1,19 +1,14 @@
-import React, { useState, useEffect, useCallback, useLayoutEffect } from "react";
+import React from "react";
 import { View, StyleSheet, TouchableOpacity, TextInput, Text } from 'react-native'
 import AsyncStorage from '@react-native-async-storage/async-storage'
-// import { grabConversationHistory, grabConversationHistoryCount } from "./modules/db";
-// import { grabStatus, resetConversation, grabMicStatus, toggleMic } from "./modules/db";
-import { Divider } from '@rneui/themed';
-import { GiftedChat, InputToolbar } from 'react-native-gifted-chat'
-import StatusBar from "../components/StatusBar";
-import Icon from 'react-native-vector-icons/FontAwesome';
-import { grabConversationHistory, grabConversationHistoryCount, grabMicStatus, grabStatus, sendPrompt, resetConversation, toggleMic, defaultIP } from '../modules/db'
+
+import { updateDittoUnitIP, defaultIP } from "../modules/db";
 
 const Settings = ({ navigation }) => {
     const [text, onChangeText] = React.useState('');
 
     const handleIPChange = () => {
-        AsyncStorage.setItem('IP', text)
+        updateDittoUnitIP(text, defaultIP)
         onChangeText('')
     }
 
