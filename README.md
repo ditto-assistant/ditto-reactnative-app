@@ -1,5 +1,5 @@
 # ditto-reactnative-app
-React Native client for ditto assistant. Works by connecting to [nlp_server](http://github.com/omarzanji/nlp_server).
+React Native client for ditto [assistant](http://github.com/ditto-assistant/assistant). Works by connecting to [nlp_server](http://github.com/ditto-assistant/nlp_server).
 
 <img src="Screenshot.png" width="40%">
 
